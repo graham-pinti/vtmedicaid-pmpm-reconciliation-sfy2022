@@ -36,12 +36,18 @@ individuals who qualify due to age, blindness, or disability.
 low-cost health coverage to children in families that earn too much to qualify for Medicaid
 - **Choices for Care** — Vermont's Medicaid Home and Community Based Services (HCBS)
 waiver program for elderly and disabled adults; one of the highest-cost MEGs
+- **Capitation/PMPM Rate** — A fixed monthly payment made to managed care organizations
+per enrolled member, regardless of actual services used
 - **PHE (Public Health Emergency)** — Refers to the COVID-19 public health emergency
 declaration, which triggered continuous enrollment provisions preventing disenrollment
 during SFY2022
-- **Capitation/PMPM Rate** — A fixed monthly payment made to managed care organizations
-per enrolled member, regardless of actual services used
-
+**Regulatory & Government Bodies**
+- **DVHA (Department of Vermont Health Access)** — Vermont's Medicaid agency, 
+responsible for administering the state's Medicaid program and reporting to the legislature
+- **AHS (Agency of Human Services)** — Vermont's umbrella agency overseeing DVHA 
+and other health and human services departments
+- **JFO (Joint Fiscal Office)** — Vermont's nonpartisan legislative budget analysis 
+office; notified of significant Medicaid budget variances for oversight purposes
 ## Analytical Questions
 
 1. How does actual enrollment compare to budgeted enrollment across all MEGs?
