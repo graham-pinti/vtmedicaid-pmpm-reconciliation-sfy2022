@@ -41,6 +41,7 @@ per enrolled member, regardless of actual services used
 - **PHE (Public Health Emergency)** — Refers to the COVID-19 public health emergency
 declaration, which triggered continuous enrollment provisions preventing disenrollment
 during SFY2022
+
 **Regulatory & Government Bodies**
 - **DVHA (Department of Vermont Health Access)** — Vermont's Medicaid agency, 
 responsible for administering the state's Medicaid program and reporting to the legislature
