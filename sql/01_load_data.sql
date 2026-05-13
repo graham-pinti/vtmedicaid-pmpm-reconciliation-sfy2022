@@ -1,6 +1,6 @@
 -- ============================================================
 -- Vermont Medicaid PMPM Reconciliation SFY2022
--- Data Load Script — Run in DBeaver against medicaid_pmpm DB
+-- Data Load Script - Run in DBeaver against medicaid_pmpm DB
 -- ============================================================
 
 -- TRUNCATE first so re-runs are idempotent
