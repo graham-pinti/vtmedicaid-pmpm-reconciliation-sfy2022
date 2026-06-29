@@ -90,6 +90,20 @@ Both charts are built in `medicaid_budget_reconcil_2022_viz.ipynb`.
 └── enroll_var_v_pmpm_var_by_meg.png
 ```
 
+## Reproducing This Analysis
+
+**Step 1 — Create the database:**
+In DBeaver, right-click Databases, select Create Database, name it `medicaid_pmpm`, click OK.
+
+**Step 2 — Run the setup script:**
+Open `sql/00_setup.sql` and run it to create the three tables.
+
+**Step 3 — Load the data:**
+Open `sql/01_load_data_copyfrom.sql`, update the three file paths to wherever you saved the CSVs locally, then run it.
+
+**Step 4 — Run the analysis:**
+Run `sql/02_analysis_queries.sql` for the seven flagging/ranking queries, then `sql/03_summary_view.sql` to build the pivoted summary view.
+
 ## Tools Used
 
 **Excel:** financial modeling, variance calculations, conditional flagging, summary dashboard
