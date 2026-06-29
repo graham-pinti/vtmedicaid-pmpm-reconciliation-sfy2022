@@ -75,6 +75,7 @@ Both charts are built in `medicaid_budget_reconcil_2022_viz.ipynb`.
 
 ## Repository Structure
 
+\`\`\`
 ├── Vermont_Medicaid_PMPM_Reconciliation_SFY2022.xlsx   # Excel layer: budget, reconciliation, findings, dashboard
 ├── medicaid_budget_reconcil_2022_viz.ipynb             # Generates the two charts below from reconciliation_clean_REAL.csv
 ├── sql/
@@ -87,6 +88,7 @@ Both charts are built in `medicaid_budget_reconcil_2022_viz.ipynb`.
 ├── findings_log_REAL.csv
 ├── cost_impact_by_meg.png
 └── enrollment_vs_pmpm_variance.png
+\`\`\`
 
 Tools Used
 
