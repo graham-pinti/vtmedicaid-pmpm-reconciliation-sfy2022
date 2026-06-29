@@ -60,24 +60,39 @@ I reimplemented the full reconciliation in PostgreSQL:
 
 **Known limitation:** Choices for Care figures reflect the Acute sub-category only. Traditional long-term care is excluded under DVHA-only reporting scope, where it reports $0 expenditure. This is documented in the spreadsheet and the SQL findings log.
 
+## Visualizations
+
+![Cost Impact by MEG](cost_impact_by_meg.png)
+
+Ranked by dollar impact. New Adult Childless is the single largest driver despite a moderate percentage swing, since the population size is large enough that even a modest variance produces a big dollar effect.
+
+![Enrollment vs PMPM Variance](enroll_var_v_pmpm_var_by_meg.png)
+
+Position shows the two drivers (enrollment drift on the x-axis, PMPM drift on the y-axis). Size and color show the financial outcome (dollar impact and direction). A MEG can sit far from center on both axes and still land favorably if the two effects offset each other, ABD Dual and Vermont Premium Assist. are both examples of this in the data.
+
+Both charts are built in `medicaid_budget_reconcil_2022_viz.ipynb`.
+
+
 ## Repository Structure
 
-```
-├── Vermont_Medicaid_PMPM_Reconciliation_SFY2022.xlsx   # Excel layer: budget, reconciliation, findings, dashboard
-├── sql/
+├── Vermont_Medicaid_PMPM_Reconciliation_SFY2022_REAL.xlsx   # Excel layer: budget, reconciliation, findings, dashboard
+├── medicaid_budget_reconcil_2022_viz.ipynb             # Generates the two charts below from reconciliation_clean_REAL.csv
+├── SQL/
 │   ├── 00_setup.sql               # Schema: budget_reference, reconciliation, findings_log
 │   ├── 01_load_data_copyfrom.sql  # COPY FROM load script (3 CSVs)
 │   ├── 02_analysis_queries.sql    # 7 analysis queries: flagging, ranking, joins, tiering
 │   └── 03_summary_view.sql        # vw_reconciliation_summary, pivoted one-row-per-MEG view
 ├── budget_reference_clean_REAL.csv
 ├── reconciliation_clean_REAL.csv
-└── findings_log_REAL.csv
-```
+├── findings_log_REAL.csv
+├── cost_impact_by_meg.png
+└── enroll_var_v_pmpm_var_by_meg.png
 
-## Tools Used
+Tools Used
 
-**Excel:** financial modeling, variance calculations, conditional flagging, summary dashboard
-**SQL (PostgreSQL):** relational schema design, COPY-based data loading, CASE-based threshold flagging, MAX(CASE WHEN...) pivoting, view creation
+Excel: financial modeling, variance calculations, conditional flagging, summary dashboard
+SQL (PostgreSQL): relational schema design, COPY-based data loading, CASE-based threshold flagging, MAX(CASE WHEN...) pivoting, view creation
+Python: pandas for data loading, matplotlib for the two charts above
 
 ## Data Sources
 
