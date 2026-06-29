@@ -90,11 +90,13 @@ Both charts are built in `medicaid_budget_reconcil_2022_viz.ipynb`.
 └── enroll_var_v_pmpm_var_by_meg.png
 ```
 
-Tools Used
+## Tools Used
 
-Excel: financial modeling, variance calculations, conditional flagging, summary dashboard
-SQL (PostgreSQL): relational schema design, COPY-based data loading, CASE-based threshold flagging, MAX(CASE WHEN...) pivoting, view creation
-Python: pandas for data loading, matplotlib for the two charts above
+**Excel:** financial modeling, variance calculations, conditional flagging, summary dashboard
+**SQL (PostgreSQL):** relational schema design, COPY-based data loading, CASE-based threshold flagging, MAX(CASE WHEN...) pivoting, view creation
+**Python:** pandas for data loading, matplotlib for the two charts above
+
+
 
 ## Data Sources
 
