@@ -1,4 +1,4 @@
-[README_v2.md](https://github.com/user-attachments/files/29445395/README_v2.md)
+
 # Vermont Medicaid PMPM Reconciliation - SFY2022
 
 A budget-vs-actual reconciliation framework for Vermont Medicaid (Green Mountain Care). Built first in Excel as a simulation, then rebuilt with published DVHA data and reimplemented in PostgreSQL.
