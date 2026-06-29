@@ -75,20 +75,20 @@ Both charts are built in `medicaid_budget_reconcil_2022_viz.ipynb`.
 
 ## Repository Structure
 
-'''
-├── Vermont_Medicaid_PMPM_Reconciliation_SFY2022.xlsx   # Excel layer: budget, reconciliation, findings, dashboard
-├── medicaid_budget_reconcil_2022_viz.ipynb             # Generates the two charts below from reconciliation_clean_REAL.csv
-├── sql/
-│   ├── 00_setup.sql               # Schema: budget_reference, reconciliation, findings_log
-│   ├── 01_load_data_copyfrom.sql  # COPY FROM load script (3 CSVs)
-│   ├── 02_analysis_queries.sql    # 7 analysis queries: flagging, ranking, joins, tiering
-│   └── 03_summary_view.sql        # vw_reconciliation_summary, pivoted one-row-per-MEG view
+```
+├── Vermont_Medicaid_PMPM_Reconciliation_SFY2022_REAL.xlsx
+├── medicaid_budget_reconcil_2022_viz.ipynb
+├── SQL/
+│   ├── 00_setup.sql
+│   ├── 01_load_data_copyfrom.sql
+│   ├── 02_analysis_queries.sql
+│   └── 03_summary_view.sql
 ├── budget_reference_clean_REAL.csv
 ├── reconciliation_clean_REAL.csv
 ├── findings_log_REAL.csv
 ├── cost_impact_by_meg.png
-└── enrollment_vs_pmpm_variance.png
-'''
+└── enroll_var_v_pmpm_var_by_meg.png
+```
 
 Tools Used
 
